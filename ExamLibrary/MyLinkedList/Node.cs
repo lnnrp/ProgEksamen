@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AlgoritmerOgDatastrukturer
+namespace MyLinkedList
 {
     public class Node<T>
     {

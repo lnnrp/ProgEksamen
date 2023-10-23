@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace AlgoritmerOgDatastrukturer
+namespace MyLinkedList
 {
     public class MyLinkedList<T> : IEnumerable<T>
     {
@@ -44,6 +44,30 @@ namespace AlgoritmerOgDatastrukturer
             }
 
             return n;
+        }
+
+        /// <summary>
+        /// Removes first node in list
+        /// </summary>
+        public void RemoveFirst()
+        {
+            // Set new first node
+            First = First.Next;
+
+            // Remove reference to previous node
+            First.Previous = null;
+        }
+
+        /// <summary>
+        /// Removes last node in list
+        /// </summary>
+        public void RemoveLast()
+        {
+            // Set new first node
+            First = First.Previous;
+
+            // Remove reference to previous node
+            First.Next = null;
         }
 
         public IEnumerator<T> GetEnumerator()
