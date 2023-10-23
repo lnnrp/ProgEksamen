@@ -180,17 +180,6 @@ namespace MyList
             } while (swapped);
         }
 
-        /// <summary>
-        /// Sorts the list using the QuickSort algorithem
-        /// </summary>
-        public void QuickSort()
-        {
-            //idk how :(
-        }
-
-
-
-
         public IEnumerator<T> GetEnumerator()
         {
             //Runs through the array until it reaches current index count
