@@ -51,7 +51,7 @@ namespace MyList
             // Only remove first occurence of value
             bool removed = false;
 
-            // Iterate through current ellemtns and skip value to be removec
+            // Iterate through current ellements and skip value to be removed
             for (int i = 0; i < Count(); i++)
             {
                 // Removes element that matches value
