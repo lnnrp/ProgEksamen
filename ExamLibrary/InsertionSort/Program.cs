@@ -25,16 +25,16 @@ void InsertionSort(int[] elements)
 {
     for (int i = 1; i < elements.Length; i++)
     {
-        int val = elements[i];
+        int currentVal = elements[i];
         int pointer = i;
 
-        // Runs through array and swaps if value to left is bigger 
-        while (pointer > 0 && comparer.Compare(val, elements[pointer - 1]) > 0)
+        // Runs through array and swaps if value to left is smaller  
+        while (pointer > 0 && comparer.Compare(currentVal, elements[pointer - 1]) > 0)
         {
             elements[pointer] = elements[pointer - 1];
             pointer--;
         }
-        elements[pointer] = val;
+        elements[pointer] = currentVal;
     }
 }
 
