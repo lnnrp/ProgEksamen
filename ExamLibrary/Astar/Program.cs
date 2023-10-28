@@ -19,8 +19,8 @@ const int moveCost = 10;
 while (true)
 {
     // Size of the level
-    sizeX = 500 - 1;
-    sizeY = 200 - 1;
+    sizeX = Console.BufferWidth - 1;
+    sizeY = Console.BufferHeight - 1;
 
     // 2D array that acts as level for A* to go from Point A to Point B
     grid = new Point[sizeX, sizeY];
