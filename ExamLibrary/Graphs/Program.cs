@@ -3,21 +3,18 @@
 // Create graph
 Graph<string> graph = new Graph<string>();
 
-// Create nodes
-Node<string> node1 = new Node<string>("Link");
-Node<string> node2 = new Node<string>("Zelda");
-Node<string> node3 = new Node<string>("Sidon");
 
 // Add nodes
-graph.AddNode(node1);
-graph.AddNode(node2);
-graph.AddNode(node3);
+graph.AddNode("Link");
+graph.AddNode("Zelda");
+graph.AddNode("Sidon");
 
 // Add edges (connections)
-node1.AddEdge(node2);
-node1.AddEdge(node3, false);
+graph.AddEdge("Link", "Zelda");
+graph.AddEdge("Zelda", "Sidon");
+graph.AddDirectedEdge("Link", "Sidon");
 
 // Display graph
-graph.DisplayGraph();
+graph.DisplayGraph(graph.NodeSet);
 
 Console.ReadLine();

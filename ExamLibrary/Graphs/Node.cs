@@ -12,40 +12,48 @@ namespace Graphs
     /// <typeparam name="T">Type of value stored</typeparam>
     public class Node<T>
     {
-        public T Value { get; set; }
 
         /// <summary>
-        /// Connections going out from the node
+        /// The nodes data, IE an int, string etc
         /// </summary>
-        public List<Edge<T>> Edges { get; } = new List<Edge<T>>();
+        public T Data { get; private set; }
 
-        public Node(T value)
+        /// <summary>
+        /// Has node been seen already
+        /// </summary>
+        public bool Discovered { get; set; }
+
+        public Node<T> Parent { get; set; }
+
+        /// <summary>
+        /// All edged connected to the node
+        /// </summary>
+        public List<Edge<T>> Edges { get; private set; } = new List<Edge<T>>();
+
+        public Node(T data)
         {
-            Value = value;
+            Data = data;
         }
 
         /// <summary>
-        /// Adds an edge between two nodes
+        /// Adds edge from this node, to another
         /// </summary>
-        /// <param name="end">Other node to connect to</param>
-        /// <param name="addReturn">Optional parameter, by default adds connection both ways</param>
-        public void AddEdge(Node<T> end, bool addReturn = true)
+        /// <param name="other">The other node that the edge is between</param>
+        public void AddEdge(Node<T> other, int weight = 1)
         {
-            Edges.Add(new Edge<T>(this, end));
-
-            if (addReturn)
-                end.AddEdge(this, false); 
+            Edges.Add(new Edge<T>(this, other, weight));
         }
 
         /// <summary>
         /// Removes edge between two nodes
         /// </summary>
+        /// <param name="end"></param>
         public void RemoveEdge(Node<T> end)
         {
             Edge<T> edgeToRemove = null;
             foreach(Edge<T> edge in Edges)
             {
-                if (edge.End == end)
+                if (edge.To == end)
                 {
                     edgeToRemove = edge;
                     return;
@@ -56,7 +64,7 @@ namespace Graphs
 
         public override string ToString()
         {
-            return "Node: " + Value.ToString();
+            return "Node: " + Data.ToString();
         }
     }
 }

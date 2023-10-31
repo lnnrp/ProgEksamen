@@ -8,18 +8,34 @@ namespace Graphs
 {
     public class Edge<T>
     {
-        public Node<T> Start { get; set; }
-        public Node<T> End { get; set; }
+        /// <summary>
+        /// The node the edge goes to
+        /// </summary>
+        public Node<T> To { get; private set; }
+        /// <summary>
+        /// The node the edge goes from
+        /// </summary>
+        public Node<T> From { get; private set; }
+        /// <summary>
+        /// The edges weight, by default 1
+        /// </summary>
+        public int Weight { get; private set; }
 
-        public Edge(Node<T> start, Node<T> end)
+        /// <summary>
+        /// Makes a new edge
+        /// </summary>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        public Edge(Node<T> from, Node<T> to, int weight = 1)
         {
-            Start = start;
-            End = end;
+            To = to;
+            From = from;
+            Weight = weight;
         }
 
         public override string ToString()
         {
-            return "Edge: " + Start.Value.ToString() + " -> " + End.Value.ToString();
+            return "Edge: " + From.Data.ToString() + " -> " + To.Data.ToString();
         }
     }
 }
