@@ -63,15 +63,16 @@ void SetupGraph()
     graph.AddEdge("Carousel", "Flying Chairs");
 }
 
-Node<T> BFS(Node<T> start, Node<T> goal)
+// Virtually the same as DFS but uses a queue
+Node<string> BFS(Node<string> start, Node<string> goal)
 { 
-    Queue<Edge<T>> path = new Queue<Edge<T>>();
+    Queue<Edge<string>> path = new Queue<Edge<string>>();
 
-    path.Enqueue(new Edge<T>(start, start));
+    path.Enqueue(new Edge<string>(start, start));
 
     while (path.Count > 0)
     {
-        Edge<T> edge = path.Dequeue();
+        Edge<string> edge = path.Dequeue();
 
         if (!edge.To.Discovered)
         {
@@ -79,7 +80,7 @@ Node<T> BFS(Node<T> start, Node<T> goal)
             edge.To.Parent = edge.From;
         }
 
-        foreach (Edge<T> e in edge.To.Edges)
+        foreach (Edge<string> e in edge.To.Edges)
         {
             if (!e.To.Discovered)
                 path.Enqueue(e);

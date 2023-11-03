@@ -17,8 +17,14 @@ namespace Astar
 
         public ConsoleColor Color { get; private set; }
 
+        /// <summary>
+        /// Is point a tile to walk on or a wall
+        /// </summary>
         public bool Walkable { get; private set; }
 
+        /// <summary>
+        /// Previous point in a search
+        /// </summary>
         public Point Parent { get; private set; }
 
         /// <summary>
