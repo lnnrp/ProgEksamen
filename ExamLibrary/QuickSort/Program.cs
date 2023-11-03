@@ -20,6 +20,7 @@ QuickSort(arrayToSort, 0, arrayToSort.Length - 1);
 // Print sorted numbers
 PrintArray(arrayToSort);
 
+//"Divide and concour" type af algoritme
 static void QuickSort(int[] array, int left, int right)
 { 
     // Makes sure original left/right values doesn't get changed (used for recursive recall)

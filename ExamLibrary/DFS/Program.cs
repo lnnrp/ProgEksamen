@@ -1,4 +1,5 @@
 ﻿using Graphs;
+using System.Collections.Generic;
 
 Graph<string> graph = new Graph<string>();
 
@@ -62,16 +63,17 @@ void SetupGraph()
     graph.AddEdge("Carousel", "Flying Chairs");
 }
 
-Node<T> DFS(Node<T> start, Node<T> goal)
+// Virutally the same as BFS but uses a stack
+Node<string> DFS(Node<string> start, Node<string> goal)
 {
 
-    Stack<Edge<T>> path = new Stack<Edge<T>>();
+    Stack<Edge<string>> path = new Stack<Edge<string>>();
 
-    path.Push(new Edge<T>(start, start));
+    path.Push(new Edge<string>(start, start));
 
     while (path.Count > 0)
     {
-        Edge<T> edge = path.Pop();
+        Edge<string> edge = path.Pop();
 
         if (!edge.To.Discovered)
         {
@@ -84,7 +86,7 @@ Node<T> DFS(Node<T> start, Node<T> goal)
             return edge.To;
         }
 
-        foreach (Edge<T> e in edge.To.Edges)
+        foreach (Edge<string> e in edge.To.Edges)
         {
             if (!e.To.Discovered)
                 path.Push(e);

@@ -20,6 +20,7 @@ BubbleSort();
 // Print sorted array
 PrintArray(arrayToSort);
 
+//"Brute force" type af algoritme
 void BubbleSort()
 {
     bool swapped;
