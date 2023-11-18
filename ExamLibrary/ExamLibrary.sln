@@ -53,8 +53,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPClient", "UDPClient\UDPC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UDPServer", "UDPServer\UDPServer.csproj", "{66FC44F3-A844-46F4-A385-C315432E11C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Astar (Not mine, works)", "..\..\..\..\Downloads\ProgrammingExam\ProgrammingExam\Astar (Commented)\Astar (Not mine, works).csproj", "{FE33451E-A7AE-48FC-AA16-78DF678E5AB5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -137,10 +135,6 @@ Global
 		{66FC44F3-A844-46F4-A385-C315432E11C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66FC44F3-A844-46F4-A385-C315432E11C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66FC44F3-A844-46F4-A385-C315432E11C2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE33451E-A7AE-48FC-AA16-78DF678E5AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE33451E-A7AE-48FC-AA16-78DF678E5AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE33451E-A7AE-48FC-AA16-78DF678E5AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE33451E-A7AE-48FC-AA16-78DF678E5AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -167,7 +161,6 @@ Global
 		{F59C96B5-93F7-4617-B7D9-3476FB441C11} = {E133792D-FEE7-422E-9C42-FC3903F919D8}
 		{90AC5112-089A-410C-8F62-DC6D41D635B6} = {F59C96B5-93F7-4617-B7D9-3476FB441C11}
 		{66FC44F3-A844-46F4-A385-C315432E11C2} = {F59C96B5-93F7-4617-B7D9-3476FB441C11}
-		{FE33451E-A7AE-48FC-AA16-78DF678E5AB5} = {8B897BE3-E688-491E-89ED-0F88FAB59279}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3CBC47C-D647-45C9-9322-B65707790F53}
