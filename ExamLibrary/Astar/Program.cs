@@ -9,7 +9,8 @@ int sizeX, sizeY;
 /// <summary>
 /// Movement grid
 /// </summary>
-Point[,] grid = null, oldGrid = null;
+Point[,] grid = null;
+Point[,] oldGrid = null;
 
 /// <summary>
 /// The default cost to move from one point to another
@@ -103,14 +104,14 @@ void FindPath(Point start, Point end)
                 if (neighborX < 0 || neighborY < 0 || neighborX > sizeX - 1 || neighborY > sizeY - 1)
                     continue;
 
-                if (x != 0 || y != 0)
+                if (x != 0 && y != 0)
                     continue;
 
                 // Finds neighbor Point in grid array
                 Point neighbor = grid[neighborX, neighborY];
 
                 // Checks if neighbor point already exists in closedList
-                if (openList.Contains(neighbor))
+                if (closedList.Contains(neighbor))
                     continue;
 
                 // Checks if neighor is walkable
@@ -137,7 +138,7 @@ void FindPath(Point start, Point end)
                 }
 
                 // Updates neighbors G & H values and sets neighbors parent
-                if (updateNeighbor)
+                if (updateNeighbor == true)
                 {
                     neighbor.SetParent(best);
 
@@ -160,7 +161,9 @@ void FindPath(Point start, Point end)
     }
 
     if (end.Parent == null)
-        throw new Exception("Can't find a path :(");
+    {
+
+    }
     // Makes path back to start
     else
     {

@@ -16,7 +16,7 @@ client.Connect("localhost", 7777);
 
 Console.WriteLine("Connected to server on port 7777 ... ");
 
-// Thread to recieve messages from server, ie "echos" of  actions performed by server
+// Thread to recieve messages from server, ie "echos" of  actions performed by server or actions performed by other clients
 Thread recieveThread = new Thread(() => RecieveMessages(client));
 recieveThread.IsBackground = true;
 recieveThread.Start();

@@ -48,6 +48,8 @@ void HandleClient(TcpClient client)
             // Reads messageData itself
             byte[] messageBytes = bnR.ReadBytes(messageLength);
 
+            // Deserializes message from binary data to data we can read ie string or int. 
+            // Becuase of union it can deserialize the correct type on it's own
             NetworkMessage mes = MessagePackSerializer.Deserialize<NetworkMessage>(messageBytes);
 
             switch (mes)
