@@ -33,7 +33,7 @@ namespace State
         public void Exit()
         {
             Console.WriteLine("\nExiting running state ...");
-            Console.ReadKey();
+            Console.ReadKey(); 
             Console.Clear();
         }
     }
