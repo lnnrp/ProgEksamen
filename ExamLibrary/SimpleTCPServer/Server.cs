@@ -77,7 +77,7 @@ namespace SimpleTCPServer
         /// <param name="stream"></param>
         /// <param name="custor"></param>
         /// <returns></returns>
-        private string ReadMessage(NetworkStream stream, Client clients)
+        private static string ReadMessage(NetworkStream stream, Client clients)
         {
             byte[] data = new byte[256];
 
@@ -102,7 +102,7 @@ namespace SimpleTCPServer
         /// <param name="clients"></param>
         /// <param name="input"></param>
         /// <returns></returns>
-        private string Respond(NetworkStream stream, Client clients, string input)
+        private static string Respond(NetworkStream stream, Client clients, string input)
         {
             if (input.ToUpper() == "LIST") // Example of list input
             {
@@ -137,7 +137,7 @@ namespace SimpleTCPServer
         /// <param name="stream"></param>
         /// <param name="customer"></param>
         /// <param name="message"></param>
-        private void WriteMessage(NetworkStream stream, string message)
+        private static void WriteMessage(NetworkStream stream, string message)
         {
             // Encodes string to bytes to send
             byte[] responseData = Encoding.UTF8.GetBytes(message);
