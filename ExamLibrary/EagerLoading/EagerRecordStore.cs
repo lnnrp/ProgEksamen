@@ -6,7 +6,7 @@ namespace EagerLoading
     {
         public List<Vinyl> vinyls; // This is the list the bool statement in program checks
 
-        public List<Vinyl> Vinyls { get => vinyls; set => vinyls = value; }
+        public List<Vinyl> EagerVinyls { get => vinyls; set => vinyls = value; }
 
         public EagerRecordStore()
         {

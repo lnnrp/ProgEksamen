@@ -6,7 +6,7 @@ namespace LazyLoading
     {
         public List<Vinyl> vinyls; // This is the list the bool statement in program checks
 
-        public List<Vinyl> Vinyls 
+        public List<Vinyl> LazyVinyls 
         {
             get
             {
