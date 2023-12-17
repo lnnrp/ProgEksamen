@@ -8,5 +8,6 @@ namespace Factory
 {
     public abstract class VinylFactory
     {
+        public abstract Vinyl CreateVinyl();
     }
 }
