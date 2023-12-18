@@ -8,6 +8,6 @@ namespace ObjectPool
 {
     public abstract class GameObject
     {
-        public string Name { get; set; }
+        public string? Name { get; set; }
     }
 }
