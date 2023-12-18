@@ -81,6 +81,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hashing", "Hashing\Hashing.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltHashing", "SaltHashing\SaltHashing.csproj", "{79C0C6E8-68D7-44C7-A4D1-AB4287E8F3C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaltHashingWithDB", "SaltHashingWithDB\SaltHashingWithDB.csproj", "{71AFA3AF-1D16-4A4F-BA9D-D5075D777B7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -203,6 +205,10 @@ Global
 		{79C0C6E8-68D7-44C7-A4D1-AB4287E8F3C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79C0C6E8-68D7-44C7-A4D1-AB4287E8F3C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79C0C6E8-68D7-44C7-A4D1-AB4287E8F3C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71AFA3AF-1D16-4A4F-BA9D-D5075D777B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71AFA3AF-1D16-4A4F-BA9D-D5075D777B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71AFA3AF-1D16-4A4F-BA9D-D5075D777B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71AFA3AF-1D16-4A4F-BA9D-D5075D777B7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -241,6 +247,7 @@ Global
 		{3A084553-9CFE-4256-A0B5-D406EEC33DF3} = {74F05F10-91F3-4840-9CE4-5285D95732BF}
 		{04BD1B2A-1624-40AA-980F-D18576DEC749} = {74F05F10-91F3-4840-9CE4-5285D95732BF}
 		{79C0C6E8-68D7-44C7-A4D1-AB4287E8F3C8} = {74F05F10-91F3-4840-9CE4-5285D95732BF}
+		{71AFA3AF-1D16-4A4F-BA9D-D5075D777B7D} = {74F05F10-91F3-4840-9CE4-5285D95732BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3CBC47C-D647-45C9-9322-B65707790F53}
