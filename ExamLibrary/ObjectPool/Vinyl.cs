@@ -2,7 +2,11 @@
 
 namespace ObjectPool
 {
-    public class Vinyl
+    public class Vinyl : GameObject
     {
+        public Vinyl(string name)
+        {
+            Name = name;
+        }
     }
 }

@@ -8,5 +8,9 @@ namespace ObjectPool
 {
     public class VinylObjectPool : ObjectPool
     {
+        protected override GameObject CreateObject()
+        {
+            return new Vinyl("Signed Vinyl"); // Creates a 'Signed Vinyl' if the inactive list is empty
+        }
     }
 }
