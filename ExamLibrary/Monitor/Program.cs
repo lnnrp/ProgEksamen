@@ -1,4 +1,4 @@
-﻿namespace ThreadingGeneral
+﻿namespace Monitor
 {
     internal class Program
     {
