@@ -13,6 +13,9 @@ namespace Mutexes
         // if the thread using the mutex crashes or gets killed it is abandoned and throws an exception
         private static Mutex m = new Mutex();
 
+        // A mutex can be 'owned' when it is instantiated, can be used to determine when a thread gets activated
+        private static Mutex mSpecial = new Mutex(true);
+
         static void Main(string[] args)
         {
             // Creates and starts two new threads
@@ -21,6 +24,11 @@ namespace Mutexes
                 Thread t = new Thread(RunMe);
                 t.Start();
             }
+
+            // Following is used to show one of the special capabilities of mutex
+            //Console.WriteLine("Threads are waiting - Press any key to start them");
+            //Console.ReadKey();
+            //mSpecial.ReleaseMutex();
         }
 
         /// <summary>
@@ -34,7 +42,8 @@ namespace Mutexes
             {
                 // Marks the start of the critical region
                 m.WaitOne();
-               
+                //mSpecial.WaitOne();
+
                 if (state == 5) // Checks if state is equal to five
                 {
                     state++; // Counts state, the shared resource, up by one
@@ -46,6 +55,7 @@ namespace Mutexes
                 
                 // Marks the end of the critical region
                 m.ReleaseMutex();
+                //mSpecial.ReleaseMutex();
             }
         }
     }
