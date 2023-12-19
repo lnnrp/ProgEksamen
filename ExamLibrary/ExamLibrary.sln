@@ -97,6 +97,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadingGeneral", "Threadi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RaceCondition", "RaceCondition\RaceCondition.csproj", "{3C1C9BA1-7C5B-48B7-9D49-28248AF56A5E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lock", "Lock\Lock.csproj", "{E6B4FCF6-6D3F-4E97-A3A2-29C31A4E62D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -255,6 +257,10 @@ Global
 		{3C1C9BA1-7C5B-48B7-9D49-28248AF56A5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C1C9BA1-7C5B-48B7-9D49-28248AF56A5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C1C9BA1-7C5B-48B7-9D49-28248AF56A5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6B4FCF6-6D3F-4E97-A3A2-29C31A4E62D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B4FCF6-6D3F-4E97-A3A2-29C31A4E62D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B4FCF6-6D3F-4E97-A3A2-29C31A4E62D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B4FCF6-6D3F-4E97-A3A2-29C31A4E62D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -301,6 +307,7 @@ Global
 		{7989353F-14AF-4145-B860-8DD362B4FF2F} = {2A69D28A-A0B6-4F2B-9755-9CB435B94619}
 		{0900CC36-11F1-4B3F-B52D-42D12D8688CE} = {7D6F2350-EF9C-4101-8525-5068EABB2DC8}
 		{3C1C9BA1-7C5B-48B7-9D49-28248AF56A5E} = {7D6F2350-EF9C-4101-8525-5068EABB2DC8}
+		{E6B4FCF6-6D3F-4E97-A3A2-29C31A4E62D1} = {7D6F2350-EF9C-4101-8525-5068EABB2DC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3CBC47C-D647-45C9-9322-B65707790F53}
