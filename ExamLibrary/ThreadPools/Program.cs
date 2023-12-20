@@ -1,4 +1,4 @@
-﻿namespace ThreadingGeneral
+﻿namespace ThreadPools
 {
     internal class Program
     {
@@ -6,6 +6,5 @@
         {
             //TODO: implement
         }
-
     }
 }
