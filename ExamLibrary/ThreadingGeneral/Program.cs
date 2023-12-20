@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            //TODO: implement
+            Console.WriteLine("Hello, World!");
         }
+
     }
 }

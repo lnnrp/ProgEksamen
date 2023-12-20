@@ -105,6 +105,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mutex", "Mutex\Mutex.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaphores", "Semaphores\Semaphores.csproj", "{357663F4-8B65-47F3-BEC7-4131606A1811}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Deadlock", "Deadlock\Deadlock.csproj", "{5C0F3B2D-E0D9-41BE-A6AC-1A74FD7D4262}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -279,6 +281,10 @@ Global
 		{357663F4-8B65-47F3-BEC7-4131606A1811}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{357663F4-8B65-47F3-BEC7-4131606A1811}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{357663F4-8B65-47F3-BEC7-4131606A1811}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0F3B2D-E0D9-41BE-A6AC-1A74FD7D4262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0F3B2D-E0D9-41BE-A6AC-1A74FD7D4262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0F3B2D-E0D9-41BE-A6AC-1A74FD7D4262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0F3B2D-E0D9-41BE-A6AC-1A74FD7D4262}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -329,6 +335,7 @@ Global
 		{AE694EC8-D3D8-4003-AC8D-64E52F27955D} = {7D6F2350-EF9C-4101-8525-5068EABB2DC8}
 		{2EBF09C4-7660-4673-9F6B-0543D5B4234A} = {7D6F2350-EF9C-4101-8525-5068EABB2DC8}
 		{357663F4-8B65-47F3-BEC7-4131606A1811} = {7D6F2350-EF9C-4101-8525-5068EABB2DC8}
+		{5C0F3B2D-E0D9-41BE-A6AC-1A74FD7D4262} = {7D6F2350-EF9C-4101-8525-5068EABB2DC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D3CBC47C-D647-45C9-9322-B65707790F53}
