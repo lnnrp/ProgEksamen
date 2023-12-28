@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace SimpleTCPServer
 {
-    public class Client
+    public class ClientInfo
     {
         public string Name { get; set; }
 
-        public Client(string? name)
+        public ClientInfo(string name)
         {
             this.Name = name;
         }

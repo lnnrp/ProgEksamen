@@ -12,6 +12,11 @@ namespace SimpleTCPServer
 
         static void Main(string[] args)
         {
+            StartServer();
+        }
+
+        private static void StartServer()
+        {
             server = new TcpListener(IPAddress.Any, 6666);
             server.Start();
 
@@ -37,7 +42,7 @@ namespace SimpleTCPServer
 
                 WriteMessage(stream, "Welcome to the server");
 
-                Client clients = new Client(clientIndex.ToString());
+                ClientInfo clients = new ClientInfo(clientIndex.ToString());
                 clientIndex++;
 
                 while (true)
@@ -77,7 +82,7 @@ namespace SimpleTCPServer
         /// <param name="stream"></param>
         /// <param name="custor"></param>
         /// <returns></returns>
-        private static string ReadMessage(NetworkStream stream, Client clients)
+        private static string ReadMessage(NetworkStream stream, ClientInfo clients)
         {
             byte[] data = new byte[256];
 
@@ -102,7 +107,7 @@ namespace SimpleTCPServer
         /// <param name="clients"></param>
         /// <param name="input"></param>
         /// <returns></returns>
-        private static string Respond(NetworkStream stream, Client clients, string input)
+        private static string Respond(NetworkStream stream, ClientInfo clients, string input)
         {
             if (input.ToUpper() == "LIST") // Example of list input
             {
@@ -120,7 +125,7 @@ namespace SimpleTCPServer
 
             if (input.Contains(" "))
             {
-                // Empty input
+                //TODO: change to fit needs
             }
 
             if (input.Contains("quit"))
